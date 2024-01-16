@@ -1,0 +1,197 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/incognito.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>New Tab</title>
+  <style>
+    *{
+    margin: 0;
+    padding: 0;
+    background: rgb(53, 54, 58);
+    line-height: calc(100% + 8px);
+    /* font-family: Roboto, 'Segoe UI', Tahoma, sans-serif; */
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper {
+    font-size: 14px;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 8px 48px 24px;
+    font-weight: 480;
+}
+
+.header {
+    text-align: center;
+    color: rgb(232, 234, 237);
+}
+.header > img {
+    height: 120px;
+    width: 120px;
+}
+
+.header h1 {
+    margin: 1.2rem auto;
+    font-size: x-large;
+    font-weight: 400;
+}
+.desc1 {
+    margin-bottom: 25px;
+}
+
+.desc1 > p{
+    color: rgb(232, 234, 237);
+}
+
+.desc2 {
+    display: flex;
+    color: rgb(232, 234, 237);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.desc2 > .list1, .desc2 > .list2 {
+    flex: 50%;
+    box-sizing: border-box;
+}
+
+.desc2> .list1>  h3, .desc2 >.list2>h3 {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.desc2 > .list1 > .x1 > .content, .desc2 > .list2 > .x1 > .content {
+    padding-left: 25px;
+}
+
+.desc3 {
+    color: rgb(232, 234, 237);
+    margin: 30px auto;
+    padding: 12px 20px;
+    background: rgb(60, 64, 67);
+    border: none;
+    border-radius: 4px;
+}
+
+.desc3 > h4, .desc3 > .rand1 >.a, .desc3 > .rand1 >.b {
+    background: rgb(60, 64, 67);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.rand1 {
+    display: flex;
+    flex: row wrap;
+    justify-content: space-between;
+}
+
+@media (min-width: 720px) {
+    .wrapper {
+        margin-top: 40px;
+        min-width: 240px;
+        padding: 8px 48px 24px;
+    }
+}
+
+@media (max-width: 720px) {
+    .header > img {
+        height: 72px;
+        width: 72px;
+    }
+    .wrapper {
+        min-width: 176px;
+        max-width: 600px !important;
+        padding: 72px 32px;
+        margin-top: 20px;
+    }
+    .header {
+        text-align: start;
+    }
+    .desc2 {
+        flex-direction: column;
+    }
+    .desc2 > .list1{
+        margin-bottom: 20px;
+    }
+    .wrapper {
+        padding-top: 38px;
+    } 
+}
+
+@media (max-width: 400px) {
+    .rand1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .rand1 > .a {
+        padding-bottom: 10px;
+    }
+    .rand1 > .b >img {
+        margin-left: 0px !important;
+    }
+}
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <img src="/images/incognito.png" alt="Incognito_tab_image">
+            <h1>You've gone Incognito</h1>
+        </div>
+        <div class="desc1">
+            <p>Now you can browse privately, and other people who use this device won’t see your activity. However, downloads, bookmarks and reading list items will be saved. <a id="learn-more" href="https://support.google.com/chrome/?p=incognito" style="color: rgb(138, 180, 248); text-decoration: none;">Learn more</a> </p>
+        </div>
+        <div class="desc2">
+            <div class="list1">
+                <ul class="x1" style="list-style: none;">
+                    <li>Chrome won’t save the following information:</li>
+                    <li class="content">
+                        <ul>
+                            <li>Your browsing history</li>
+                            <li>Cookies and site data</li>
+                            <li>Information entered in forms</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="list2">
+                <ul class="x1" style="list-style: none;">
+                    <li>Your activity might still be visible to:</li>
+                    <li class="content">
+                        <ul style="list-style-type: circle;">
+                            <li>Websites you visit</li>
+                            <li>Your employer or school</li>
+                            <li>Your internet service provider</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="desc3">
+            <h4>Block third-party cookies</h4>
+            <div class="rand1">
+                <div class="a">
+                    When on, sites can't use cookies that track you across the web. Features on some sites may break.
+                </div>
+                <div class="b">
+                    <img style="background: rgb(60, 64, 67); width: 20px; height: 20px; margin-left: 10px;" src="/images/incognito.png" alt="icon">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
