@@ -6,15 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Youtube API</title>
     <link rel="stylesheet" href="/css/main.css">
+  <style>
+    input {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
   <div align="center">
-    <h1>To make this work, you must go to <a href="api.html?v=">Here</a>. Once you are there, go to youtube.</h1>
-    <img src="/images/step1.png"></img>
-    <h1>After that, go to the end url where it says watch?v=, and get the video id.</h1>
+    <h1>First, go to the end url where it says watch?v=, and get the video id.</h1>
     <img src="/images/step2.png"></img>
-    <h1>and copy it. <br> <br> Next, you want to go to the link at the 1st step and paste the video id.</h1>
-    <h2>There, now you have youtube unblocked! Enjoy!</h2>
+    <h1>and copy it. <br> <br> then, paste it in to the search bar.</h1>
+     <input placeholder="video ID here." id="search-input" class="search-input" type="text">
   </div>
 </body>
+  <script>
+    const searchInput = document.querySelector("#search-input");
+    searchInput.addEventListener("keydown", function(event){
+     if(event.code === "Enter") {
+            search();
+        }	
+    });
+    function search() {
+       const input = searchInput.value;
+         window.location.href = "/spoofs/" +  "api.html?v=" + input
+    } 
+  </script>
 </html>

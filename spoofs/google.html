@@ -1,75 +1,94 @@
-<html lang="en"
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
+<title>Google</title>
+<link rel="icon" href="https://raw.githack.com/naemazam/Google-search-clone/main/images/favicon.png">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google</title>
-    <link rel="icon" href="https://google-clone.jordanservices.repl.co/img/gl.png" />
-	<link rel="shortcut icon" href="https://google-clone.jordanservices.repl.co/img/gl.png" />
-    <link rel="stylesheet" href="https://google-clone.jordanservices.repl.co/gcss/styles.css" type="text/css">
+<link rel="stylesheet" href="https://raw.githack.com/naemazam/Google-search-clone/main/style.css">
+ <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
+ <script defer src="main.js"></script>
 </head>
+
 <body>
-    <section>
-        <header>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
             <ul>
-                <li><a href="#">Gmail</a></li>
-                <li><a href="#">Images</a></li>
-                <li><a href="#"><img src="https://google-clone.jordanservices.repl.co/img/dots.png"></a></li>
-                <li><button>Sign in</button></li>
-            </ul>
-        </header>
-        <div class="main">
-            <img src="https://google-clone.jordanservices.repl.co/img/google.png">
-            <div class="searchBox">
-                <input type="text" class="search">
-                <div class="icons">
-                    <div>
-                        <img src="https://google-clone.jordanservices.repl.co/img/search.png">
+                
+                <li>
+                    <a class="link" href="">Images</a>
+                </li>
+                <li>
+                    <div class="circle-shadow">
+                        <a class="menu-icon" href=""><i class="fa fa-th"></i></a>
                     </div>
-                    <div>
-                        <img src="https://google-clone.jordanservices.repl.co/img/mic.png">
+                </li>
+                <li>
+                    <div class="circle-shadow">
+                        <a class="user-icon" href=""><span>Z</span></a>
                     </div>
-                </div>
-            </div>
-
-            <div class="buttons">
-                <button>Google Search</button>
-                <button>I'm Feeling Lucky</button>
-            </div>
-
-            <!-- Google offered in: हिन्दी বাংলা తెలుగు मराठी தமிழ் ગુજરાતી ಕನ್ನಡ മലയാളം ਪੰਜਾਬੀ -->
-            <ul class="languages">
-                <li>Google offered in:</li>
-                <li><a href="#">हिन्दी</a></li>
-                <li><a href="#">বাংলা</a></li>
-                <li><a href="#">తెలుగు</a></li>
-                <li><a href="#">मराठी</a></li>
-                <li><a href="#">தமிழ்</a></li>
-                <li><a href="#">ગુજરાતી</a></li>
-                <li><a href="#">ಕನ್ನಡ</a></li>
-                <li><a href="#">മലയാളം</a></li>
-                <li><a href="#">ਪੰਜਾਬੀ</a></li>
+                </li>
             </ul>
+        </nav>
+    </header>
+	
+<!-- Content -->
+ <section class="content-section">
+ <div class="content-wrapper">
+ <img class="logo-img" src="https://raw.githack.com/naemazam/Google-search-clone/main/images/logo.jpg" alt="google logo">
+ <div class="search-bar">
+ <i class="fas fa-search"></i>
+ <!-- Search Box -->
+ <input id="search-input" class="search-input" type="text">
+  <i class="fas fa-keyboard"></i>
+  <i class="fas fa-microphone"></i>
+  </div>
+  <div class="search-btns">
+  <button class="google-search-btn">Google Search</button>
+  <button class="lucky-search-btn">I'm Feeling Lucky</button>
+  </div>
+  <div class="language">
+  <p>Google Offered in: <a href="">বাংলা</a></p>
+  </div>
+  </div>
+ </section>
 
-            <div class="footer">
-                <div class="row first">
-                    <p class="country">India</p>
-                </div>
-                <div class="row second">
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Advertising</a></li>
-                        <li><a href="#">Business</a></li>
-                        <li><a href="#">How Search works</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms</a></li>
-                        <li><a href="#">Settings</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-</body>
-</html>
+<!-- Footer --> 
+<footer>
+  <div class="footer-content upper-footer">
+  <p> Bangladesh </p>
+</div>
+<div class="footer-content lower-footer">
+            <ul class="lower-left-footer">
+                <li>
+                    <a href="">About</a>
+                </li>
+				<li>
+                    <a href="">Advertising</a>
+                </li>
+                <li>
+                    <a href="">Business</a>
+                </li>
+                <li>
+                    <a href="">How Search Works</a>
+                </li>
+ </ul>
+
+      <ul class="lower-right-footer">
+                <li>
+                    <a href="">Privacy</a>
+                </li>
+                <li>
+                    <a href="">Terms</a>
+                </li>
+                <li>
+                    <a href="">Settings</a>
+                </li>
+            </ul>
+ </div>
+ </footer>
+ </body>
+ </html>

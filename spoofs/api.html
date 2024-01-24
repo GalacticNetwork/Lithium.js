@@ -32,12 +32,12 @@
 </head>
 <body>
   <div id="game-container">
-    <iframe id="gameFramey" src="https://youtube.com/embed"></iframe>
+    <iframe id="apiFramey" src="https://youtube.com/embed"></iframe>
   </div>
 </body>
   <script>
     const urlParams = new URLSearchParams(window.location.search);
     const src = urlParams.get('v');
-    document.getElementById('gameFramey').src = 'https://www.youtube-nocookie.com/embed/' + src
+    document.getElementById('apiFramey').src = 'https://www.youtube-nocookie.com/embed/' + src
   </script>
 </html>
