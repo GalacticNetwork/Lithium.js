@@ -1,2 +1,7 @@
-<p align="center"><h1>Lithium.JS</h1></p>
-<p align="center">Lithium.JS is a site for exploits, including a built in bookmark proxy, bookmark bypasses, kajigs, etc!</p>
+<p align="center"><img src="https://raw.githubusercontent.com/GalacticNetwork/lithium.js/main/logo-full.png" height="200">
+</p>
+
+<h1 align="center"><strong>Lithium.JS</strong></h1>
+<p align="center">A Library of exploits!</p>
+# Credits
+<p align="center">all exploits are respectfully owned by their rightful owners.</p>
